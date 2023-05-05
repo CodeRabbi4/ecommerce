@@ -1,0 +1,435 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 100%;
+    height:100vh;
+}
+.logo{
+    position: absolute;
+    top:80px;
+    left: 50px;
+    font-size: 2.2rem;
+}
+.logo a{
+    text-decoration: none;
+    color:rgb(47, 46, 46);
+    text-shadow: 3px 3px 30px rgb(127, 122, 122,0.5);
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.searcharea{
+    position: fixed;
+    top:50px;
+    right:90px;
+    width: 170px;
+    height: 45px;
+    background-color: white;
+    box-shadow: 2px 2px 30px rgb(34, 33, 33,0.2);
+    box-sizing: border-box;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+    border:1px solid rgb(37, 36, 36,0.1)
+}
+
+.search input{
+    width: 90px;
+    height: 20px;
+    border:none;
+    outline: none;
+    padding: 0px 10px;
+    background-color: transparent;
+    font-size: 1rem;
+}
+.search input::placeholder{
+    font-size: 0.8rem;
+    font-family: serif;
+    color:rgb(89, 87, 87);
+    letter-spacing: 1px;
+    font-weight: 600;
+}
+.section1{
+    position: absolute;
+    top:50%;
+    left:15%;
+    transform: translate(-15%, -50%);
+}
+.section1 img{
+    height:300px;
+}
+.sectionbutton{
+    position: absolute;
+    left: 90%;
+    top:50%;
+    transform: translate(-90% ,-50%);
+}
+.sectionbutton h1, h2{
+    font-size: 4rem;
+    line-height: 60px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+    letter-spacing: 3px;
+    color:rgb(46, 46, 46);
+    text-shadow: 2px 2px 15px rgb(89, 87, 87,0.3);
+}
+.sectionbutton h1{
+    letter-spacing: 29px;
+}
+span{
+    color:rgb(98, 83, 252)
+}
+.btn{
+    position: absolute;
+    width: 150px;
+    height: 40px;
+    background-color: rgb(67, 65, 65);
+    color:white;
+    border: none;
+    outline: none;
+    font-weight: 500;
+    font-size: 0.9rem;
+    letter-spacing: 0.5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    border-radius: 10% 10% 10% 10% / 50% 50% 50% 50%;
+    cursor: pointer;
+    border: transparent !important;
+}
+.btn:hover{
+    background-color: rgb(115, 86, 243);
+    transition: all ease 0.5s;
+}
+.iconarea{
+    position: fixed;
+    top:50%;
+    left:30px;
+    transform: translateY(-50%);
+    background-color: white;
+    box-shadow: 2px 2px 30px rgb(67, 65, 65,0.2);
+    padding: 5px 0px;
+    border-radius: 20px;
+    z-index: 1;
+}
+.iconarea a{
+    text-decoration: none;
+    color:rgb(63, 62, 62);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding:18px 12px ;
+}
+.iconarea a:hover .fa-facebook{
+    color:rgb(3, 64, 246)
+}
+.iconarea a:hover .fa-twitter{
+    color:rgb(94, 147, 247)
+}
+.iconarea a:hover .fa-instagram{
+    color: rgb(155, 94, 254);
+}
+.iconarea a:hover .fa-youtube{
+    color:rgb(252, 0, 0)
+}
+.productsection{
+    width: 85%;
+    background-color: white;
+    box-shadow: 2px 2px 30px rgb(54, 52, 52,0.2);
+    margin: 20px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-size: 1000px;
+    border-radius: 20px;
+    position: relative;
+    margin-top: -50px;
+}
+.productsection h1{
+      margin:30px;
+      font-weight: bold;
+      font-size: 2rem;
+      text-shadow: 3px 3px 20px rgb(64, 62, 62,0.5);
+      text-align: center;
+      letter-spacing: 1px;
+}
+.product{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 20px 0px;
+    width: 100%;
+}
+.productbox{
+    width: 350px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 30px;
+    position: relative;
+}
+.productbox img{
+    height:200px;
+}
+.productbox p{
+    margin: 5px;
+    color: rgb(153, 150, 150);
+    font-size: 0.9rem;
+    letter-spacing: 0.5px;
+}
+.productbox a{
+    text-decoration: none;
+    color:rgb(60, 58, 58);
+    font-size: 1rem;
+}
+.productbox .probtn{
+    position: absolute;
+    width:140px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background:linear-gradient(120deg,rgb(70, 61, 238)20%,rgb(162, 135, 248));
+    bottom: -20px;
+    border-radius: 15% 15% 15% 15% / 50% 50% 50% 50%;
+    color: white;
+    letter-spacing: 0.5px;
+    font-weight: 500;
+    display: none;
+}
+.productbox:hover .probtn{
+    display: flex;
+}
+.productbox:hover{
+    background-color:white;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    border-radius: 20px;
+   
+}
+.about{
+    width: 85%;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    margin: 50px auto;
+    padding: 30px;
+    margin-bottom:150px;
+}
+.aboutbox{
+    width: 40%;
+}
+.aboutbox img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.aboutbox h1{
+    font-size: 3rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-top: -20px;
+    margin: 0;
+    color: rgb(65, 63, 63);
+}
+.aboutbox h3{
+    font-size: 2rem;
+    font-weight: 500;
+    letter-spacing: 1px;
+    margin-top: 10px;
+}
+.aboutbox p{
+    color:rgb(81, 78, 78);
+    font-size: 1rem;
+    margin-top: 10px;
+    letter-spacing: 0.5px;
+}
+.notification{
+    width: 100%;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.notification h1{
+    font-size: 2.2rem;
+    color:rgb(34, 34, 34);
+    font-family: sans-serif;
+}
+.nofiinput{
+    width: 500px;
+    height: 60px;
+    background: white;
+    box-shadow: 2px 3px 30px rgb(47, 46, 46,0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+    padding: 5px 20px;
+    border-radius: 7% 7% 7% 7% / 50% 50% 50% 50%;
+}
+.nofiinput input{
+    width: 90%;
+    height: 40px;
+    border:none;
+    outline: none;
+    padding: 5px;
+    background: transparent;
+}
+.nofiinput .notibtn{
+    width: 120px;
+    height: 40px;
+    background-color: rgb(72, 70, 70);
+    color: white;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    font-size: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 1px;
+}
+.notibtn:hover{
+    background-color: rgb(80, 62, 244);
+    transition: all ease 0.2s;
+}
+footer{
+    width: 100%;
+    height:50px;
+   
+    text-align: center;
+   line-height: 50px;
+   font-size: 1.2rem;
+   background-color: rgb(28, 27, 27);
+   text-transform: capitalize;
+   letter-spacing: 0.8px;
+   color: #fcf4f4;
+ text-shadow: -1px -1px 3px #f5f3f3, 
+      2px 2px 4px #fbf9f9;
+}
+
+/*mobile view*/
+@media (max-width:800px){
+    .logo{
+    position: absolute;
+    top: 34px;
+    left: 6px;
+    font-size: 1rem;}
+    .searcharea{
+        right: 6px;
+        width: 150px;
+        height: 35px;
+    }
+    .section1 {
+        top: 40%;
+        left: 12%;
+    }
+    .section1 img {
+        height: 105px;
+    }
+    .sectionbutton h1,h2 {
+        font-size: 15px;
+        line-height: 18px;
+        letter-spacing: 1px;
+    }
+    .sectionbutton h1{
+        letter-spacing: 8px;
+    }
+    .sectionbutton {
+        left: 95%;
+        top: 40%;
+    }
+    .btn {
+        width: 60px;
+        height: 20px;
+        font-weight: 300;
+        font-size: 8px;
+        margin-top: 8px;
+    }
+    .iconarea {
+        top: 30%;
+        left: 4px;
+        transform: translateY(-54%);
+    }
+    .iconarea a{
+        padding: 4px 3px;
+        font-size: 12px;
+    }
+    .productsection {
+        width: 88%;
+        margin-top: -280px;
+    }
+    .productsection h1{
+        font-size: 25px;
+        letter-spacing: 0px;
+    }
+    .product {
+        margin: 0;
+    }
+    .productbox{
+        width:320px;
+        height: 250px;
+    }
+    .productbox img {
+        height: 150px;
+    }
+    .about {
+        padding: 0px;
+        width: 88%;
+        flex-wrap: wrap;
+        margin-bottom: 315px;
+    }
+    .aboutbox{
+        width: 85%;
+    }
+    .aboutbox h1 {
+        font-size: 2rem;
+        font-weight: bolder;
+        letter-spacing: 1px;
+    }
+    .aboutbox h3 {
+        font-size: 20px;
+        font-weight: 100;
+        letter-spacing: 0px;
+        margin-top: 5px;
+    }
+    .aboutbox p {
+        font-size: 11px;
+        margin-top: 5px;
+        letter-spacing: 0px;
+        margin-bottom: 20px;
+    }
+    .notification {
+        width: 100%;
+        height: 160px;
+    }
+    
+    .notification h1 {
+        font-size: 18px;
+        margin-top: -20px;
+    }
+    .nofiinput {
+        width: 335px;
+        height: 45px;
+    }
+    .nofiinput .notibtn {
+        width: 98px;
+        height: 30px;
+    }
+    footer{
+        height: 40px;
+        line-height: 40px;
+    }
+}
+
